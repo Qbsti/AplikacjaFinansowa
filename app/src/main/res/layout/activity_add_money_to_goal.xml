@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.qbook.financeapp.AddMoneyToGoalActivity">
+
+    <TextView
+        android:id="@+id/goal_add_money_name_textView"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Goal nr 1"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/goal_add_money_value_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="1500"
+        app:layout_constraintStart_toEndOf="@+id/goal_add_money_divider_textView"
+        app:layout_constraintTop_toTopOf="@+id/goal_add_money_amount_saved_textView" />
+
+    <TextView
+        android:id="@+id/goal_add_money_amount_saved_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="1450"
+        app:layout_constraintStart_toEndOf="@+id/goal_add_money_name_textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/goal_add_money_divider_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="/"
+        app:layout_constraintStart_toEndOf="@+id/goal_add_money_amount_saved_textView"
+        app:layout_constraintTop_toTopOf="@+id/goal_add_money_amount_saved_textView" />
+
+    <TextView
+        android:id="@+id/goal_add_money_currency_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="PLN"
+        app:layout_constraintStart_toEndOf="@+id/goal_add_money_value_textView"
+        app:layout_constraintTop_toTopOf="@+id/goal_add_money_amount_saved_textView" />
+
+    <EditText
+        android:id="@+id/goal_add_money_how_much_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="How much money to add"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goal_add_money_name_textView" />
+
+    <Button
+        android:id="@+id/goal_confirm_add_money_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Add money"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goal_add_money_how_much_editText" />
+
+    <Button
+        android:id="@+id/goal_add_money_add_full_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Full"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/goal_add_money_how_much_editText"
+        app:layout_constraintTop_toBottomOf="@+id/goal_add_money_name_textView" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.qbook.financeapp.AddExpenseActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Spinner
+        android:id="@+id/expense_category_spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/expense_title_input_text"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/expense_title_input_text"
+        app:layout_constraintTop_toBottomOf="@+id/pick_expense_category_textview" />
+
+    <CheckBox
+        android:id="@+id/recurrent_expense_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Recurrent?"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/expense_value_input_text"
+        app:layout_constraintTop_toBottomOf="@+id/expense_value_input_text" />
+
+    <EditText
+        android:id="@+id/expense_title_input_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="expense title"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/expense_value_input_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="expense value"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/expense_title_input_text"
+        app:layout_constraintStart_toStartOf="@+id/expense_title_input_text"
+        app:layout_constraintTop_toBottomOf="@+id/add_expense_category_button" />
+
+    <Button
+        android:id="@+id/save_expense_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Save"
+        app:layout_constraintEnd_toEndOf="@+id/expense_title_input_text"
+        app:layout_constraintStart_toStartOf="@+id/expense_title_input_text"
+        app:layout_constraintTop_toBottomOf="@+id/expense_recurrency_seekbar_description" />
+
+    <TextView
+        android:id="@+id/pick_expense_category_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Pick category or add a new one:"
+        app:layout_constraintEnd_toEndOf="@+id/expense_title_input_text"
+        app:layout_constraintStart_toStartOf="@+id/expense_title_input_text"
+        app:layout_constraintTop_toBottomOf="@+id/expense_title_input_text" />
+
+    <EditText
+        android:id="@+id/new_expense_category_input_text"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="new category name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/add_expense_category_button"
+        app:layout_constraintStart_toStartOf="@+id/expense_category_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/expense_category_spinner" />
+
+    <Button
+        android:id="@+id/add_expense_category_button"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="add"
+        app:layout_constraintEnd_toEndOf="@+id/expense_category_spinner"
+        app:layout_constraintStart_toEndOf="@+id/new_expense_category_input_text"
+        app:layout_constraintTop_toBottomOf="@+id/expense_category_spinner" />
+
+    <SeekBar
+        android:id="@+id/expense_recurrency_seekbar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="212dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:max="7"
+        android:progress="0"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/expense_value_input_text"
+        app:layout_constraintStart_toEndOf="@+id/recurrent_expense_check_box"
+        app:layout_constraintTop_toBottomOf="@+id/expense_value_input_text" />
+
+    <TextView
+        android:id="@+id/expense_recurrency_seekbar_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="text"
+        app:layout_constraintEnd_toEndOf="@+id/expense_recurrency_seekbar"
+        app:layout_constraintStart_toStartOf="@+id/expense_recurrency_seekbar"
+        app:layout_constraintTop_toBottomOf="@+id/expense_recurrency_seekbar" />
+
+</android.support.constraint.ConstraintLayout>

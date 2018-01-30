@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.qbook.financeapp.AddGoalActivity">
+
+    <EditText
+        android:id="@+id/goal_name_input_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Goal name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/goal_value_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Goal value"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/goal_name_input_text"
+        app:layout_constraintStart_toStartOf="@+id/goal_name_input_text"
+        app:layout_constraintTop_toBottomOf="@+id/goal_name_input_text" />
+
+    <Button
+        android:id="@+id/save_goal_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Save"
+        app:layout_constraintEnd_toEndOf="@+id/goal_value_input"
+        app:layout_constraintStart_toStartOf="@+id/goal_value_input"
+        app:layout_constraintTop_toBottomOf="@+id/goal_value_input" />
+</android.support.constraint.ConstraintLayout>

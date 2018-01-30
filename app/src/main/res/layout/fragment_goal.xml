@@ -1,0 +1,23 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:CircleProgressView="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.qbook.financeapp.GoalFragment"
+    android:id="@+id/goal_fragment_frame_layout">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/goal_activity_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        CircleProgressView:layout_constraintBottom_toBottomOf="parent"
+        CircleProgressView:layout_constraintEnd_toEndOf="parent"
+        CircleProgressView:layout_constraintStart_toStartOf="parent"
+        CircleProgressView:layout_constraintTop_toTopOf="parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</FrameLayout>

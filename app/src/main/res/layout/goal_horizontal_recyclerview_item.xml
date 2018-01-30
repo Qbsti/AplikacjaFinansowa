@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircleProgressView="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:id="@+id/goal_horizontal_recyclerview_item_root_constraint"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/goal_card_view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        CircleProgressView:layout_constraintBottom_toBottomOf="parent"
+        CircleProgressView:layout_constraintEnd_toEndOf="parent"
+        CircleProgressView:layout_constraintHorizontal_bias="1.0"
+        CircleProgressView:layout_constraintStart_toStartOf="parent"
+        CircleProgressView:layout_constraintTop_toTopOf="parent"
+        CircleProgressView:layout_constraintVertical_bias="0.0"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <at.grabner.circleprogress.CircleProgressView
+                android:id="@+id/goal_recycle_horizontal_item_circleView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                CircleProgressView:cpv_autoTextSize="false"
+                CircleProgressView:cpv_barColor="@color/colorPrimary"
+                CircleProgressView:cpv_barWidth="40dp"
+                CircleProgressView:cpv_innerContourSize="0dp"
+                CircleProgressView:cpv_maxValue="100"
+                CircleProgressView:cpv_outerContourSize="0dp"
+                CircleProgressView:cpv_rimColor="@color/colorPrimaryLight"
+                CircleProgressView:cpv_rimWidth="40dp"
+                CircleProgressView:cpv_seekMode="false"
+                CircleProgressView:cpv_showUnit="true"
+                CircleProgressView:cpv_spinColor="@color/colorPrimary"
+                CircleProgressView:cpv_textColor="@color/colorWhite"
+                CircleProgressView:cpv_textScale="1"
+                CircleProgressView:cpv_textSize="20dp"
+                CircleProgressView:cpv_unit="%"
+                CircleProgressView:cpv_unitColor="@color/colorWhite"
+                CircleProgressView:cpv_unitPosition="right_top"
+                CircleProgressView:cpv_unitScale="1"
+                CircleProgressView:cpv_unitSize="10dp"
+                CircleProgressView:cpv_value="0"
+                CircleProgressView:layout_constraintDimensionRatio="h,1:1"
+                CircleProgressView:layout_constraintEnd_toEndOf="parent"
+                CircleProgressView:layout_constraintStart_toStartOf="parent"
+                CircleProgressView:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/goal_recycle_horizontal_item_name_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Goal nr 1"
+                android:textAlignment="center"
+                CircleProgressView:layout_constraintBottom_toBottomOf="parent"
+                CircleProgressView:layout_constraintEnd_toEndOf="@+id/goal_recycle_horizontal_item_circleView"
+                CircleProgressView:layout_constraintStart_toStartOf="@+id/goal_recycle_horizontal_item_circleView"
+                CircleProgressView:layout_constraintTop_toBottomOf="@+id/goal_recycle_horizontal_item_circleView" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</android.support.constraint.ConstraintLayout>
